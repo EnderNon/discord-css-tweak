@@ -1,0 +1,16 @@
+
+/* disable clan tags */
+[class*="clanTagChiplet_"] { display: none !important; }
+span[class*="username_"] span[class*="chipletContainerInner"] {display:none}
+
+/* square avatars */
+[class*="avatar"][class*="clickable"] {border-radius: 0% !IMPORTANT;}
+
+/* disable send a gift button in bottom right */
+[aria-label="Send a gift"] {display: none}
+
+/* disable Discover servers in bottom left */
+[role="tree"] [class*="footer"] {display:none}
+/* Disable Shop then Nitro button in dms menu */
+ul[aria-label="Direct Messages"] li[class*="channel_"]:nth-child(4) {display:none}
+ul[aria-label="Direct Messages"] li[class*="channel_"]:nth-child(3) {display:none}
