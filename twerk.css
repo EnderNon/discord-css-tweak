@@ -30,3 +30,5 @@ div aside div[class*="members"] div[role="list"] h3[class*="membersGroup"]:nth-c
 
 /* Squared avatars 2: actually working eddition*/
 div[class*="avatar"] * {border-radius: 0!important; mask: 0; -webkit-mask: 0;}
+/* Squared server icons*/
+div[class*="blobContainer"] div[class*="wrapper"] * {border-radius: 0!important; mask: 0; -webkit-mask: 0;}
