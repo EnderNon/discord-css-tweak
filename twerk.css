@@ -28,7 +28,10 @@ ul[aria-label="Direct Messages"] li[class*="channel_"]:nth-child(3) {display:non
 div aside div[class*="members"] div div div[data-list-item-id*="members"] div[class*="openOnHover"] {display:none}
 div aside div[class*="members"] div[role="list"] h3[class*="membersGroup"]:nth-child(2) {display:none}
 
-/* Squared avatars 2: actually working eddition*/
+/* Squared avatars 2*/
 div[class*="avatar"] * {border-radius: 0!important; mask: 0; -webkit-mask: 0;}
 /* Squared server icons*/
-div[class*="blobContainer"] div[class*="wrapper"] * {border-radius: 0!important; mask: 0; -webkit-mask: 0;}
+div[class*="blobContainer"] * {border-radius: 0!important; mask: 0; -webkit-mask: 0;}
+div[class*="wrapper"] svg foreignObject {mask: none;}
+/* Squared server folders*/
+div[class*="wrapper"] div {border-radius:0}
