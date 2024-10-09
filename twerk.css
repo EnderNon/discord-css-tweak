@@ -2,7 +2,7 @@
  * @name endernon flavoured discord
  * @author endernon
  * @description my own tweaks for discord
- * @version 1.0.0
+ * @version 1.0.1
  * @source https://github.com/EnderNon/discord-css-tweak
  * @updateUrl https://raw.githubusercontent.com/EnderNon/discord-css-tweak/refs/heads/main/twerk.css
 */
@@ -24,3 +24,6 @@ span[class*="username_"] span[class*="chipletContainerInner"] {display:none}
 /* Disable Shop then Nitro button in dms menu */
 ul[aria-label="Direct Messages"] li[class*="channel_"]:nth-child(4) {display:none}
 ul[aria-label="Direct Messages"] li[class*="channel_"]:nth-child(3) {display:none}
+/* disable the Activity menu at top of members*/
+div aside div[class*="members"] div div div[data-list-item-id*="members"] div[class*="openOnHover"] {display:none}
+div aside div[class*="members"] div[role="list"] h3[class*="membersGroup"]:nth-child(2) {display:none}
