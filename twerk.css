@@ -27,3 +27,6 @@ ul[aria-label="Direct Messages"] li[class*="channel_"]:nth-child(3) {display:non
 /* disable the Activity menu at top of members*/
 div aside div[class*="members"] div div div[data-list-item-id*="members"] div[class*="openOnHover"] {display:none}
 div aside div[class*="members"] div[role="list"] h3[class*="membersGroup"]:nth-child(2) {display:none}
+
+/* Squared avatars 2: actually working eddition*/
+div[class*="avatar"] * {border-radius: 0!important; mask: 0; -webkit-mask: 0;}
