@@ -20,10 +20,10 @@ span[class*="username_"] span[class*="chipletContainerInner"] {display:none}
 [aria-label="Send a gift"] {display: none}
 
 /* disable Discover servers in bottom left */
-[role="tree"] [class*="footer"] {display:none}
-/* Disable Shop then Nitro button in dms menu */
-ul[aria-label="Direct Messages"] li[class*="channel_"]:nth-child(5) {display:none}
-ul[aria-label="Direct Messages"] li[class*="channel_"]:nth-child(4) {display:none}
+div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {display:none}
+/* Disable Shop button in dms menu */
+li div a[href="/shop"] {display:none};
+
 /* disable the Activity menu at top of members*/
 div aside div[class*="members"] div div div[data-list-item-id*="members"] div[class*="openOnHover"] {display:none}
 div aside div[class*="members"] div[role="list"] h3[class*="membersGroup"]:nth-child(2) {display:none}
