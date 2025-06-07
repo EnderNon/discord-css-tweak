@@ -34,3 +34,16 @@ div[class*="listItem"] div div[class*="blobContainer"] * {border-radius: 0!impor
 
 /* Squared server folders*/
 div[class][data-dnd-name][draggable="true"] div[class*="wrapper"] svg * {border-radius: 0!important; mask: 0; -webkit-mask: 0;}
+
+/* disable avatar deco*/
+[class*="avatarDecoration"] {
+  display: none;
+}
+
+/* disable namecards on sidebar of channel */
+div[aria-label="Members"][class*="content"] 
+div[class^="member"] 
+div[class^="childContainer"] 
+div[class*="container"][style*="background: linear-gradient"] {
+  display: none;
+}
