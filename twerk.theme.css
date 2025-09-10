@@ -47,3 +47,29 @@ div[class^="childContainer"]
 div[class*="container"][style*="background: linear-gradient"] {
   display: none;
 }
+
+
+div[class*="sidebar"] {
+  /* Align the own profile showcase bit into where the channels sidebar is */
+  section[class*="panels"] {
+    border-radius: 0;
+    border-right: none;
+    border-left: none;
+
+    bottom: 0px;
+    right: 0px;
+    left: calc(1 + var(--custom-guild-list-width));
+    width: calc(100% - 2px - var(--custom-guild-list-width));
+  };
+  /* remove black bg where the profile showcase bit was */
+  nav[class*="wrapper"] {
+    margin-bottom: 0;
+  }
+  ::after {
+    height: 0;
+  }
+}
+/* remove black bar on the bottom left idk what its for */
+div[class*="sidebar"]:after {
+  height: 0;
+}
