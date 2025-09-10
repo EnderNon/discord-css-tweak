@@ -84,3 +84,33 @@ main[class*="chatContent"] {
     }
   }
 }
+/* searchbar gaming (borked) */
+div[class*="subtitleContainer"] section[class*="title"] {
+  div[class*="upperContainer"] {
+    div[class*="toolbar"] {
+      div[class*="search"] {
+        height: 100%;
+        div[class*="search"] {
+          height: 100%;
+          div[class*="searchBar"] {
+            border-radius: 0;
+            border-top: none;
+            border-bottom: none;
+            height: 100%;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+  padding-top: 0;
+  padding-bottom: 0;
+  
+}
+div[class*="DraftEditor-root"] {
+  
+}
+div[class*="DraftEditor-editorContainer"] {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
