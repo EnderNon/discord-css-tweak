@@ -50,12 +50,11 @@ div[class*="container"][style*="background: linear-gradient"] {
 
 
 div[class*="sidebar"] {
-  /* Align the own profile showcase bit into where the channels sidebar is */
+    /* Align the own profile showcase bit into where the channels sidebar is */
   section[class*="panels"] {
     border-radius: 0;
     border-right: none;
     border-left: none;
-
     bottom: 0px;
     right: 0px;
     left: calc(1 + var(--custom-guild-list-width));
@@ -65,11 +64,23 @@ div[class*="sidebar"] {
   nav[class*="wrapper"] {
     margin-bottom: 0;
   }
-  ::after {
-    height: 0;
-  }
 }
 /* remove black bar on the bottom left idk what its for */
 div[class*="sidebar"]:after {
   height: 0;
+}
+/* for textbox into rectangular style*/
+main[class*="chatContent"] {
+  form {
+    /* padding on left and right removed*/
+    padding-left: 0;
+    padding-right: 0;
+    /* bottom padding removed, border on left removed to join up, border corner rounding gone*/
+    div[class*="channelTextArea"] {
+      margin-bottom: 0;
+      border-radius: 0;
+      border-left: 0;
+
+    }
+  }
 }
