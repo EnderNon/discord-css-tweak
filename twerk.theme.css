@@ -11,7 +11,19 @@
 
 /* disable clan tags */
 [class*="clanTagChiplet_"] { display: none !important; }
-span[class*="username_"] span[class*="chipletContainerInner"] {display:none}
+span[class*="username_"] span[class*="chipletContainerInner"] {display:none} {
+  div[class*="contents_"] {
+    h3[class*="header"] {
+      span[id*="message-username"][class*="headerText_"] {
+        span {
+          span[class*="chipletContainerInner__"] {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
 
 /* square avatars */
 [class*="avatar"][class*="clickable"] {border-radius: 0% !IMPORTANT;}
