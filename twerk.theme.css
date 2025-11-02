@@ -31,6 +31,9 @@ div[class*="wrapper"] svg foreignObject {mask: none;}
 div[class*="listItem"] div[class*="wrapper"] div[class*=centerTarget] * {border-radius: 0!important; mask: 0; -webkit-mask: 0;}
 div[class*="repliedMessage"] img {border-radius:0!important; mask: 0; -webkit-mask: 0;}
 div[class*="listItem"] div div[class*="blobContainer"] * {border-radius: 0!important; mask: 0; -webkit-mask: 0;}
+img[class*="avatar_"][class*="clickable_"][src*="https://cdn.discordapp.com/avatars"] {
+  border-radius: 0;
+}
 
 /* Squared server folders*/
 div[class][data-dnd-name][draggable="true"] div[class*="wrapper"] svg * {border-radius: 0!important; mask: 0; -webkit-mask: 0;}
@@ -46,6 +49,13 @@ div[class^="member"]
 div[class^="childContainer"] 
 div[class*="container"][style*="background: linear-gradient"] {
   display: none;
+}
+div[class*="member__"] { 
+  div[class*="childContainer__"][class*="nameplated__"] { 
+    div[class*="container"] {
+      display: none;
+    }
+  }
 }
 
 
