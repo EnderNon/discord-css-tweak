@@ -139,3 +139,8 @@ div[class*="DraftEditor-editorContainer"] {
   margin-top: 5px;
   margin-bottom: 0px;
 }
+
+
+div[data-list-item-id*="members"] > div[class*="nameplated"] > div[class*="container"] {
+  display: none;
+}
