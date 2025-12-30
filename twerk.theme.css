@@ -144,3 +144,11 @@ div[class*="DraftEditor-editorContainer"] {
 div[data-list-item-id*="members"] > div[class*="nameplated"] > div[class*="container"] {
   display: none;
 }
+
+/* hide the stupid username fonts */
+div[class*="name"] > span[class*="username"] > span[class*="name"] span[class*="nameContainer"] span[class*="dnsFont"] {
+  font-family: "gg sans", "Arial", "sans-serif";
+}
+li[id*="chat-messages"][class*="messageListItem"] > div[class*="message"] > div[class*="contents"] > [class*="header"] span[id*="message-username"][class*="headerText"] span[class*="dnsFont"] {
+  font-family: "gg sans", "Arial", "sans-serif";
+}
