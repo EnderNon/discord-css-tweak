@@ -1,7 +1,7 @@
 /**
  * @name do not load me directly
  * @author endernon
- * @description my own tweaks for discord, mostly squaring icons
+ * @description my own tweaks for discord, mostly squaring pfps + bullshit blocker
  * @version 1.0.5
  * @source https://github.com/EnderNon/discord-css-tweak
  * @updateUrl https://raw.githubusercontent.com/EnderNon/discord-css-tweak/refs/heads/main/twerk.css
@@ -151,4 +151,23 @@ div[class*="name"] > span[class*="username"] > span[class*="name"] span[class*="
 }
 li[id*="chat-messages"][class*="messageListItem"] > div[class*="message"] > div[class*="contents"] > [class*="header"] span[id*="message-username"][class*="headerText"] span[class*="dnsFont"] {
   font-family: "gg sans", "Arial", "sans-serif";
+}
+
+/* squared avatars round 2 */
+
+/* dm list */
+li[class*="channel"][class*="container"] > div[class*="interactive"] > a[class*="-link"] > div[class*="-layout"] > div[class*="-avatar"],
+/* side panel on right*/
+div[class*="outer"] > div[class*="inner"] > div[class*="none"] > div[class*="-header"] > div[class*="-avatar"],
+div[class*="childContainer"] > div[class*="memberInner"] > div[class*="-avatar"],
+/* beginning of dms */
+div[class*="-messagesWrapper"] > div[class*="scrollerBase"] > div[class*="-content"] > ol[class*="scrollerInner"] > div[class*="-container"]
+{
+  > div[class*="-wrapper"] {
+    border-radius: 0;
+    > svg[class*="-mask"][class*="-svg"] > foreignObject[mask] > div[class*="avatarStack"] > img[class*="-avatar"] {
+      border-radius: 0;
+    }
+  }
+
 }
