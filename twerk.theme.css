@@ -154,20 +154,9 @@ li[id*="chat-messages"][class*="messageListItem"] > div[class*="message"] > div[
 }
 
 /* squared avatars round 2 */
-
-/* dm list */
-li[class*="channel"][class*="container"] > div[class*="interactive"] > a[class*="-link"] > div[class*="-layout"] > div[class*="-avatar"],
-/* side panel on right*/
-div[class*="outer"] > div[class*="inner"] > div[class*="none"] > div[class*="-header"] > div[class*="-avatar"],
-div[class*="childContainer"] > div[class*="memberInner"] > div[class*="-avatar"],
-/* beginning of dms */
-div[class*="-messagesWrapper"] > div[class*="scrollerBase"] > div[class*="-content"] > ol[class*="scrollerInner"] > div[class*="-container"]
-{
-  > div[class*="-wrapper"] {
+div[class*="wrapper"] {
+  border-radius: 0;
+  > svg[class*="mask"][class*="svg"] > foreignObject[mask] > div[class*="avatarStack"] > img[class*="avatar"] {
     border-radius: 0;
-    > svg[class*="-mask"][class*="-svg"] > foreignObject[mask] > div[class*="avatarStack"] > img[class*="-avatar"] {
-      border-radius: 0;
-    }
   }
-
 }
