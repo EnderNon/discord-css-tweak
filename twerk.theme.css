@@ -145,18 +145,45 @@ div[data-list-item-id*="members"] > div[class*="nameplated"] > div[class*="conta
   display: none;
 }
 
-/* hide the stupid username fonts */
-div[class*="name"] > span[class*="username"] > span[class*="name"] span[class*="nameContainer"] span[class*="dnsFont"] {
-  font-family: "gg sans", "Arial", "sans-serif";
-}
-li[id*="chat-messages"][class*="messageListItem"] > div[class*="message"] > div[class*="contents"] > [class*="header"] span[id*="message-username"][class*="headerText"] span[class*="dnsFont"] {
-  font-family: "gg sans", "Arial", "sans-serif";
-}
-
 /* squared avatars round 2 */
 div[class*="wrapper"] {
   border-radius: 0;
   > svg[class*="mask"][class*="svg"] > foreignObject[mask] > div[class*="avatarStack"] > img[class*="avatar"] {
     border-radius: 0;
   }
+}
+
+
+/* hide the stupid username fonts and also gradient on hover */
+div[class*="name"] > span[class*="username"] > span[class*="name"] span[class*="nameContainer"] span[class*="dnsFont"] {
+  font-family: "gg sans", "Arial", "sans-serif";
+}
+li[id*="chat-messages"][class*="messageListItem"] > div[class*="message"] > div[class*="contents"] > [class*="header"] span[id*="message-username"][class*="headerText"] span[class*="dnsFont"] {
+  font-family: "gg sans", "Arial", "sans-serif";
+}
+li[class*="channel"][class*="dm"] > div[class*="interactive"] > a[class*="link"] > div[class*="layout"] > div[class*="withDisplayNameStyles"] > div[clasS*="nameAndDecorators"] > div[class*="leftName"] > div[class*="name"] > div[class*="withDisplayNameStyles"] > div[class*="dnsFont"]  {
+  font-family: "gg sans", "Arial", "sans-serif";
+
+}
+/* more username bs*/
+[class*="showEffect"][class*="container"] [class*="toon"] {
+  color: inherit;
+
+}
+[class*="dnsFont"][class*="container"] [class*="toon"] {
+  font-family: "gg sans", "Arial", "sans-serif";
+}
+[class*="animated"] [class*="toon"]:before {
+  animation: none;
+  animation-iteration-count: 0;
+}
+[class*="showEffect"][class*="container"] {
+  opacity: 1;
+  --custom-display-name-styles-main-color: rgba(0,0,0,0) !important;
+  --custom-display-name-styles-light-1-color: rgba(0,0,0,0)!important;
+  --custom-display-name-styles-light-2-color: rgba(0,0,0,0)!important;
+  --custom-display-name-styles-dark-1-color: rgba(0,0,0,0)!important;
+  --custom-display-name-styles-dark-2-color: rgba(0,0,0,0)!important;
+  --custom-display-name-styles-toon-stroke-color: rgba(0,0,0,0)!important;
+  --custom-display-name-styles-neon-stroke-color: rgba(0,0,0,0)!important;
 }
