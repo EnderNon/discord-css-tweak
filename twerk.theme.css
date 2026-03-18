@@ -1,13 +1,15 @@
 /**
  * @name do not load me directly
  * @author endernon
- * @description my own tweaks for discord, mostly squaring pfps + bullshit blocker
+ * @description my own tweaks for discord, mostly squaring pfps + bullshit blocker.
  * @version 1.0.5
  * @source https://github.com/EnderNon/discord-css-tweak
  * @updateUrl https://raw.githubusercontent.com/EnderNon/discord-css-tweak/refs/heads/main/twerk.css
 */
 
-
+:root { /* CHANGE THIS IF YOU WANT CUSTOM FONTS. This overrides to remove the other font family override.*/
+  --endernon-font-family: "gg sans", "Arial", "sans-serif";
+}
 
 /* disable clan tags */
 [class*="clanTagChiplet_"] { display: none !important; }
@@ -156,13 +158,13 @@ div[class*="wrapper"] {
 
 /* hide the stupid username fonts and also gradient on hover */
 div[class*="name"] > span[class*="username"] > span[class*="name"] span[class*="nameContainer"] span[class*="dnsFont"] {
-  font-family: "gg sans", "Arial", "sans-serif";
+  font-family: var(--endernon-font-family);
 }
 li[id*="chat-messages"][class*="messageListItem"] > div[class*="message"] > div[class*="contents"] > [class*="header"] span[id*="message-username"][class*="headerText"] span[class*="dnsFont"] {
-  font-family: "gg sans", "Arial", "sans-serif";
+  font-family: var(--endernon-font-family);
 }
 li[class*="channel"][class*="dm"] > div[class*="interactive"] > a[class*="link"] > div[class*="layout"] > div[class*="withDisplayNameStyles"] > div[clasS*="nameAndDecorators"] > div[class*="leftName"] > div[class*="name"] > div[class*="withDisplayNameStyles"] > div[class*="dnsFont"]  {
-  font-family: "gg sans", "Arial", "sans-serif";
+  font-family: var(--endernon-font-family);
 
 }
 /* more username bs*/
@@ -171,7 +173,10 @@ li[class*="channel"][class*="dm"] > div[class*="interactive"] > a[class*="link"]
 
 }
 [class*="dnsFont"][class*="container"] [class*="toon"] {
-  font-family: "gg sans", "Arial", "sans-serif";
+  font-family: var(--endernon-font-family);
+}
+[class*="dnsFont"] {
+  font-family: var(--endernon-font-family);
 }
 [class*="animated"] [class*="toon"]:before {
   animation: none;
