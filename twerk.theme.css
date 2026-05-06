@@ -192,3 +192,16 @@ li[class*="channel"][class*="dm"] > div[class*="interactive"] > a[class*="link"]
   --custom-display-name-styles-toon-stroke-color: rgba(0,0,0,0)!important;
   --custom-display-name-styles-neon-stroke-color: rgba(0,0,0,0)!important;
 }
+
+
+div[class*="withDisplayNameStyles"] > div[class*="showEffect"] > span[class*="innerContainer"] {
+  color: rgba(255,255,255,255);
+}
+
+div[style*="linear-gradient"] > div[class*="videoContainer"] > video[playsinline] {
+  display: none
+}
+div[class*="showEffect"] > span[data-username-with-effects][class*="gradient"] {
+  background: rgba(0,0,0,0);
+  -webkit-text-fill-color: white;
+}
