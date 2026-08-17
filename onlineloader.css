@@ -2,10 +2,10 @@
  * @name endernon css disccord tweak
  * @author endernon
  * @authorLink https://github.com/endernon
- * @description my own tweaks for discord, mostly squaring pfps + bullshit blocker.
+ * @description my own tweaks for discord, mostly squaring pfps + bullshit blocker. Now hosted on Codeberg because Github has been far too unreliable.
  * @license AGPL-3.0-or-later
  * @version 1.0.5
  * @source https://github.com/EnderNon/discord-css-tweak
 */
 
-@import url("https://raw.githubusercontent.com/EnderNon/discord-css-tweak/refs/heads/main/twerk.theme.css")
+@import url("https://codeberg.org/endernon/discord-css-tweak/raw/branch/main/twerk.theme.css")
