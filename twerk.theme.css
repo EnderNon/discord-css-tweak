@@ -205,3 +205,8 @@ div[class*="showEffect"] > span[data-username-with-effects][class*="gradient"] {
   background: rgba(0,0,0,0);
   -webkit-text-fill-color: white;
 }
+
+/* annoying ass friend list */
+div[style*="--custom-friends-sidebar-width"] {
+    display: none
+}
